@@ -7,43 +7,44 @@
   <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
+
   <!-- Header / Breadcrumb -->
   <header class="bg-white/80 backdrop-blur shadow sticky top-0 z-20">
-    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="../index.html" class="text-lg font-bold text-blue-600">&larr; Back to Portfolio</a>
-      <h1 class="text-xl font-semibold">UAV Control System (LQR)</h1>
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-0">
+      <a href="index.html" class="text-lg font-bold text-blue-600">&larr; Back to Portfolio</a>
+      <h1 class="text-xl font-semibold text-left md:text-center">UAV Control System (LQR)</h1>
     </div>
   </header>
 
-  <<!-- Hero -->
+  <!-- Hero -->
   <section class="py-12 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+    <div class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-6 md:gap-8">
       <div class="md:w-1/2 text-center md:text-left">
-        <h2 class="text-3xl md:text-4xl font-extrabold">Tricopter Altitude Holding using LQR</h2>
-        <p class="mt-4 text-sm md:text-base max-w-xl leading-relaxed">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold">Tricopter Altitude Holding using LQR</h2>
+        <p class="mt-4 text-sm sm:text-base md:text-base leading-relaxed max-w-full md:max-w-xl">
           Final project focused on designing, simulating, and validating a Linear Quadratic Regulator (LQR) control system for tricopter altitude stabilization. 
           This work highlights transferable expertise in <strong>R&D</strong>, <strong>QA</strong>, <strong>QC</strong>, and <strong>engineering</strong> through modeling, implementation, and systematic testing.
         </p>
-        <div class="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
-          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm">LQR</span>
-          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm">MATLAB/Simulink</span>
-          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm">C/C++</span>
-          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm">Teensy 3.5</span>
+        <div class="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
+          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs sm:text-sm">LQR</span>
+          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs sm:text-sm">MATLAB/Simulink</span>
+          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs sm:text-sm">C/C++</span>
+          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs sm:text-sm">Teensy 3.5</span>
         </div>
       </div>
 
-      <div class="md:w-1/2 flex justify-center">
+      <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
         <img src="../img/tricopter.png" 
             alt="Tricopter" 
-            class="hero-img w-72 h-56 object-cover rounded-xl shadow-2xl border-4 border-white cursor-pointer">
+            class="hero-img w-60 sm:w-72 md:w-80 h-44 sm:h-56 md:h-56 object-cover rounded-xl shadow-2xl border-4 border-white cursor-pointer">
       </div>
     </div>
   </section>
 
   <!-- Project Details -->
-  <section class="container mx-auto px-6 py-12">
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="md:col-span-2 bg-white rounded-2xl shadow p-6">
+  <section class="container mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <div class="md:col-span-2 bg-white rounded-2xl shadow p-4 sm:p-6">
         <h3 class="text-2xl font-bold text-purple-600 mb-4">Project Summary</h3>
         <p class="text-gray-700 leading-relaxed mb-4">
           The project aimed to stabilize tricopter altitude using an LQR controller. 
@@ -78,13 +79,13 @@
           MATLAB supported modeling, Q/R tuning, data plotting, and validation, ensuring consistency between simulation and experiment.
         </p>
 
-        <div class="mt-6 flex gap-3">
-          <a href="#gallery" class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold shadow hover:scale-105 transition">View Gallery</a>
-          <a href="#download" class="inline-block bg-gray-200 text-gray-800 px-5 py-3 rounded-lg font-semibold shadow hover:scale-105 transition">Download Report (PDF)</a>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+          <a href="#gallery" class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold shadow hover:scale-105 transition w-full sm:w-auto text-center">View Gallery</a>
+          <a href="#download" class="inline-block bg-gray-200 text-gray-800 px-5 py-3 rounded-lg font-semibold shadow hover:scale-105 transition w-full sm:w-auto text-center">Download Report (PDF)</a>
         </div>
       </div>
 
-      <aside class="bg-white rounded-2xl shadow p-6">
+      <aside class="bg-white rounded-2xl shadow p-4 sm:p-6">
         <h4 class="text-lg font-semibold text-blue-600 mb-3">Quick Specs</h4>
         <ul class="text-gray-700 list-none space-y-2">
           <li><strong>Platform:</strong> Custom Tricopter</li>
@@ -100,15 +101,15 @@
 
   <!-- Gallery -->
   <section id="gallery" class="py-12 bg-gray-100">
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto px-4 sm:px-6">
       <h3 class="text-2xl font-bold text-center text-blue-600 mb-8">Gallery & Plots</h3>
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
         
         <!-- Item 1 -->
         <div class="bg-white rounded-lg shadow overflow-hidden">
           <img src="../img/tricoptermodel.png" 
               alt="3D Prototype" 
-              class="gallery-img w-full h-56 object-cover cursor-pointer">
+              class="gallery-img w-full h-48 sm:h-56 object-cover cursor-pointer">
           <div class="p-2 bg-gray-50 text-center text-sm font-medium text-gray-700">
             3D Prototype (Model & Assembly)
           </div>
@@ -118,7 +119,7 @@
         <div class="bg-white rounded-lg shadow overflow-hidden">
           <img src="../img/nondisturbances.png" 
               alt="Altitude Test Without Disturbance" 
-              class="gallery-img w-full h-56 object-cover cursor-pointer">
+              class="gallery-img w-full h-48 sm:h-56 object-cover cursor-pointer">
           <div class="p-2 bg-gray-50 text-center text-sm font-medium text-gray-700">
             Altitude Test — Without Disturbance
           </div>
@@ -128,7 +129,7 @@
         <div class="bg-white rounded-lg shadow overflow-hidden">
           <img src="../img/disturbance.png" 
               alt="Altitude Test With Disturbance" 
-              class="gallery-img w-full h-56 object-cover cursor-pointer">
+              class="gallery-img w-full h-48 sm:h-56 object-cover cursor-pointer">
           <div class="p-2 bg-gray-50 text-center text-sm font-medium text-gray-700">
             Altitude Test — With Disturbance
           </div>
@@ -141,14 +142,14 @@
 
   <!-- Popup Modal -->
   <div id="imgModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
-    <span id="closeModal" class="absolute top-5 right-8 text-white text-3xl cursor-pointer">&times;</span>
+    <span id="closeModal" class="absolute top-5 right-5 sm:right-8 text-white text-3xl cursor-pointer">&times;</span>
     <img id="modalImg" src="" alt="Full View" class="max-h-[90%] max-w-[90%] rounded-lg shadow-2xl">
   </div>
 
   <script>
     // Ambil semua gambar gallery
     const galleryImages = document.querySelectorAll('.gallery-img');
-    const heroImage = document.querySelector('.hero-img'); // Hero image
+    const heroImage = document.querySelector('.hero-img'); 
     const modal = document.getElementById('imgModal');
     const modalImg = document.getElementById('modalImg');
     const closeModal = document.getElementById('closeModal');
@@ -190,16 +191,14 @@
 
   <!-- Demo & Source -->
   <section id="demo" class="py-12 bg-white">
-    <div class="container mx-auto px-6 text-center">
+    <div class="container mx-auto px-4 sm:px-6 text-center">
       <h3 class="text-2xl font-bold text-purple-600 mb-6">Demo & Source Code</h3>
       
-      <!-- YouTube -->
       <a href="https://youtube.com/shorts/4cO5PvUh7qg?feature=share" target="_blank"
-        class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-red-700 transition mr-3">
+        class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-red-700 transition mb-3 sm:mb-0 sm:mr-3">
         ▶ Watch Demo on YouTube
       </a>
 
-      <!-- GitHub -->
       <a href="#github"
         class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-700 transition">
         💻 View Source on GitHub
@@ -207,7 +206,6 @@
     </div>
   </section>
 
-  
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-6 text-center mt-12">
     <p>&copy; 2025 Agus Setyo Adi Saputro — UAV Control System (LQR)</p>
