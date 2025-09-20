@@ -1,0 +1,15 @@
+# Dependency
+node_modules/
+
+# Build artifacts
+dist/*.map
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Env file
+.env
+
+# none
+src/project-uav copy.html

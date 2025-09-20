@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UAV Control System (LQR) — Project Detail</title>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header / Breadcrumb -->
+  <header class="bg-white/80 backdrop-blur shadow sticky top-0 z-20">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../index.html" class="text-lg font-bold text-blue-600">&larr; Back to Portfolio</a>
+      <h1 class="text-xl font-semibold">UAV Control System (LQR)</h1>
+    </div>
+  </header>
+
+  <<!-- Hero -->
+  <section class="py-12 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Tricopter Altitude Holding using LQR</h2>
+        <p class="mt-4 text-sm md:text-base max-w-xl leading-relaxed">
+          Final project focused on designing, simulating, and validating a Linear Quadratic Regulator (LQR) control system for tricopter altitude stabilization. 
+          This work highlights transferable expertise in <strong>R&D</strong>, <strong>QA</strong>, <strong>QC</strong>, and <strong>engineering</strong> through modeling, implementation, and systematic testing.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
+          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm">LQR</span>
+          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm">MATLAB/Simulink</span>
+          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm">C/C++</span>
+          <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm">Teensy 3.5</span>
+        </div>
+      </div>
+
+      <div class="md:w-1/2 flex justify-center">
+        <img src="../img/tricopter.png" 
+            alt="Tricopter" 
+            class="hero-img w-72 h-56 object-cover rounded-xl shadow-2xl border-4 border-white cursor-pointer">
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details -->
+  <section class="container mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="md:col-span-2 bg-white rounded-2xl shadow p-6">
+        <h3 class="text-2xl font-bold text-purple-600 mb-4">Project Summary</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          The project aimed to stabilize tricopter altitude using an LQR controller. 
+          Core stages included system modeling, Q/R tuning, MATLAB/Simulink simulations, 
+          C/C++ implementation on Teensy 3.5, and prototype testing. 
+          Results demonstrated reliable altitude tracking and validated consistency between simulation and experiment.
+          These tasks directly reflect expertise in <strong>R&D (design & modeling)</strong>, 
+          <strong>QA (simulation validation)</strong>, <strong>QC (prototype testing accuracy)</strong>, 
+          and <strong>engineering (real-time system implementation)</strong>.
+        </p>
+
+        <h4 class="text-lg font-semibold mt-4 mb-2">My Contributions</h4>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+          <li><strong>R&D:</strong> Modeled vertical dynamics of tricopter (linearized system).</li>
+          <li><strong>Engineering:</strong> Designed and implemented LQR controller on Teensy 3.5.</li>
+          <li><strong>QA:</strong> Conducted MATLAB/Simulink simulation with trajectory & disturbance scenarios.</li>
+          <li><strong>QC:</strong> Performed prototype assembly, altitude tests, and disturbance validation.</li>
+        </ul>
+
+        <h4 class="text-lg font-semibold mt-4 mb-2">Results & Validation</h4>
+        <p class="text-gray-700 mb-4">
+          - Steady-state error <strong>&lt; 5 cm</strong> in step altitude tests.<br>
+          - Robust recovery from impulse disturbances with controlled overshoot.<br>
+          - Simulation vs experiment agreement &gt; 90% under test scenarios.<br>
+          These outcomes demonstrate strong alignment with <strong>QA</strong> and <strong>QC</strong> methodologies.
+        </p>
+
+        <h4 class="text-lg font-semibold mt-4 mb-2">Technical Notes</h4>
+        <p class="text-gray-700 mb-4">
+          Teensy 3.5 was used as the main control platform (with prior experience on Teensy 3.2 & 4.0).  
+          The GY-86 module was utilized only for its MPU (IMU), while altitude measurement relied on the HC-SR05 ultrasonic sensor as a cost-effective reference for low-altitude testing.  
+          MATLAB supported modeling, Q/R tuning, data plotting, and validation, ensuring consistency between simulation and experiment.
+        </p>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#gallery" class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold shadow hover:scale-105 transition">View Gallery</a>
+          <a href="#download" class="inline-block bg-gray-200 text-gray-800 px-5 py-3 rounded-lg font-semibold shadow hover:scale-105 transition">Download Report (PDF)</a>
+        </div>
+      </div>
+
+      <aside class="bg-white rounded-2xl shadow p-6">
+        <h4 class="text-lg font-semibold text-blue-600 mb-3">Quick Specs</h4>
+        <ul class="text-gray-700 list-none space-y-2">
+          <li><strong>Platform:</strong> Custom Tricopter</li>
+          <li><strong>Controller:</strong> LQR (discrete-time)</li>
+          <li><strong>Tools:</strong> MATLAB/Simulink, Teensy 3.5 (C/C++)</li>
+          <li><strong>Sensors:</strong> HC-SR05 (altitude), GY-86 MPU (IMU)</li>
+          <li><strong>Validation:</strong> Simulation & prototype testing</li>
+          <li><strong>Fields:</strong> R&D, QA, QC, Engineering</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl font-bold text-center text-blue-600 mb-8">Gallery & Plots</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Item 1 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="../img/tricoptermodel.png" 
+              alt="3D Prototype" 
+              class="gallery-img w-full h-56 object-cover cursor-pointer">
+          <div class="p-2 bg-gray-50 text-center text-sm font-medium text-gray-700">
+            3D Prototype (Model & Assembly)
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="../img/nondisturbances.png" 
+              alt="Altitude Test Without Disturbance" 
+              class="gallery-img w-full h-56 object-cover cursor-pointer">
+          <div class="p-2 bg-gray-50 text-center text-sm font-medium text-gray-700">
+            Altitude Test — Without Disturbance
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="../img/disturbance.png" 
+              alt="Altitude Test With Disturbance" 
+              class="gallery-img w-full h-56 object-cover cursor-pointer">
+          <div class="p-2 bg-gray-50 text-center text-sm font-medium text-gray-700">
+            Altitude Test — With Disturbance
+          </div>
+        </div>
+
+      </div>
+      <p class="text-sm text-gray-600 mt-4 text-center">Click an image to view in full size.</p>
+    </div>
+  </section>
+
+  <!-- Popup Modal -->
+  <div id="imgModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+    <span id="closeModal" class="absolute top-5 right-8 text-white text-3xl cursor-pointer">&times;</span>
+    <img id="modalImg" src="" alt="Full View" class="max-h-[90%] max-w-[90%] rounded-lg shadow-2xl">
+  </div>
+
+  <script>
+    // Ambil semua gambar gallery
+    const galleryImages = document.querySelectorAll('.gallery-img');
+    const heroImage = document.querySelector('.hero-img'); // Hero image
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImg');
+    const closeModal = document.getElementById('closeModal');
+  
+    // Saat gambar galeri diklik
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      });
+    });
+  
+    // Saat gambar hero diklik
+    if (heroImage) {
+      heroImage.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        modalImg.src = heroImage.src;
+        modalImg.alt = heroImage.alt;
+      });
+    }
+  
+    // Tutup modal saat tombol X diklik
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    });
+  
+    // Tutup modal saat klik background hitam
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    });
+  </script>
+
+  <!-- Demo & Source -->
+  <section id="demo" class="py-12 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold text-purple-600 mb-6">Demo & Source Code</h3>
+      
+      <!-- YouTube -->
+      <a href="https://youtube.com/shorts/4cO5PvUh7qg?feature=share" target="_blank"
+        class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-red-700 transition mr-3">
+        ▶ Watch Demo on YouTube
+      </a>
+
+      <!-- GitHub -->
+      <a href="#github"
+        class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-700 transition">
+        💻 View Source on GitHub
+      </a>
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center mt-12">
+    <p>&copy; 2025 Agus Setyo Adi Saputro — UAV Control System (LQR)</p>
+  </footer>
+
+</body>
+</html>
